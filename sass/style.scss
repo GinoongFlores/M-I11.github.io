@@ -1,0 +1,158 @@
+body {
+    font-family: Raleway;
+    background-color:  #f9e79f;
+
+}
+
+h4 {
+    font-weight: bolder;
+}
+
+
+@import 'mixins';
+
+.navbar {
+    font-family: Raleway;
+    padding: .8rem;
+}
+
+.navbar-nav {
+    li {
+        padding-right: 25px;
+        font-weight: bold;
+    }
+}
+
+
+.main {
+    text-align: center;
+    margin-top: 1rem;
+    .lead {
+        padding: 0 5rem 0 5rem;
+        margin-top: 2rem;
+    }
+}
+
+// Mang Inasal's Gallery
+
+.header {
+    margin: .5vw;
+    font-size: 0;
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+
+.header {
+    .iligan {
+        -webkit-box-flex: auto;
+        -ms-flex: auto;
+        flex: auto;
+        width: 200px;
+        margin: .5vw;
+    }
+}
+
+.header {
+    .iligan {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.elem a:link {
+    color: #414958;
+    text-decoration: underline;
+}
+  
+.for-gallery {
+    background-color: #fdfdfd;
+    margin-bottom: 5rem;
+}
+
+.logo {
+    margin-left: 32rem;
+    top: 2rem;
+    position: relative;
+}
+
+.elem, .elem * {
+    -webkit-box-sizing: border-box;
+    -webkit-box-sizing-box-sizing: border-box;
+    margin: 0 !important;
+}
+
+.elem {
+    @include elem;
+}
+
+.elem > span {
+    @include elemspan;
+}
+
+.lcl_fade_oc.lcl_pre_show #lcl_overlay,
+.lcl_fade_oc.lcl_pre_show #lcl_window,
+.lcl_fade_oc.lcl_is_closing #lcl_overlay,
+.lcl_fade_oc.lcl_is_closing #lcl_window {
+  opacity: 0 !important;
+}
+
+.lcl_fade_oc .lcl_is_closing #lcl_overlay {
+  -webkit-transition-delay: 0.15s !important;
+  -webkit-transition-delay-transistion-delay: .15s !important;
+}
+
+// @media (min-width: 400px) and (max-width: 900px) {
+//     .header {
+//         padding: 0;
+
+//         .iligan {
+//             margin: 0;
+//         }
+//     }
+
+//     h4 {
+//         color: blue;
+//     }
+// }
+
+
+// min-width greather than or equal to the value
+// max-width less than or equal to the value 
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 400px) {
+    //mobile
+    .header {
+        padding: 0;
+
+        .iligan {
+            margin: 0;
+        }
+    }
+
+    h4 {
+        color: blue;
+    } 
+
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { }
